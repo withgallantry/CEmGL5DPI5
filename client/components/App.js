@@ -23,7 +23,7 @@ export class App extends React.Component {
   render() {
     return (
       <div>
-        <h1 style={{marginLeft: '20px'}}>Last 300 Active storify users from {this.state.time}</h1>
+        <h1 style={{marginLeft: '20px'}}>Storify Time {this.state.time}</h1>
         <MuiThemeProvider>
           {this.props.children}
         </MuiThemeProvider>
