@@ -3,7 +3,6 @@ import {List, ListItem} from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
 import {grey400, darkBlack, lightBlack} from 'material-ui/styles/colors';
 import {getUsers} from '../../lib/storifyUsers';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const renderUserItem = (user, index, onclick) => {
   return ( <ListItem
@@ -52,13 +51,11 @@ export class Storify extends React.Component {
 
   render() {
     return (
-      <MuiThemeProvider>
         <div>
           <List>
             {this.state.users.map((userGroup) => renderUserGroup(userGroup, this.openLink))}
           </List>
         </div>
-      </MuiThemeProvider>
     );
   }
 }

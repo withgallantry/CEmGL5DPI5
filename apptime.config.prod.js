@@ -15,11 +15,10 @@ module.exports = (config, apptime) => ({
   //// If you need to wrap your compiled pages in a redux store before render you
   //// can use this option
   //
-  // ...apptime.ReactStaticPlugin({
-  //   routes: './client/routes.js',
-  //   template: './template.js',
-  //   reduxStore: './client/store.js',
-  // }),
+  ...apptime.ReactStaticPlugin({
+    routes: './client/routes.js',
+    template: './template.js',
+  }),
 
   entry: {
     ...config.entry, // Make sure the vendor entry point is included

@@ -8,6 +8,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
  * component as the base compoenent that's passed to ReactDOM.render, so we
  * still use createClass here.
  */
+
 export class App extends React.Component {
   static propTypes = {
     children: T.node,
@@ -23,7 +24,7 @@ export class App extends React.Component {
   render() {
     return (
       <div>
-        <h1 style={{marginLeft: '20px'}}>Storify Time {this.state.time}</h1>
+        <h1 style={{marginLeft: '20px'}}>Last 300 Active storify users from {this.state.time}</h1>
         <MuiThemeProvider>
           {this.props.children}
         </MuiThemeProvider>

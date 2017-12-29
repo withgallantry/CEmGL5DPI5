@@ -5,7 +5,7 @@ import {App} from './components/App.js';
 import {Storify} from './components/Storify/App';
 
 export const routes = (
-  <Route path='/' component={Storify}>
+  <Route path='*' component={App}>
     <IndexRoute title='App' component={Storify}/>
   </Route>
 );
